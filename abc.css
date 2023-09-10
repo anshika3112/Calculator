@@ -1,0 +1,17 @@
+.col
+{
+  
+    background-image: url('../th.jpeg'); /* Replace with your image path */
+    
+}
+.container
+{
+ margin-top: 150px;
+ color:#000; 
+ text-align: center;
+}
+
+.mx-auto 
+{
+    margin:auto;
+}
