@@ -5,7 +5,6 @@
 
 This README explains the HTML and CSS code used to create a basic calculator web page. The web page provides a user interface for performing arithmetic calculations.
 
-
 The HTML structure of the web page is organized as follows:
 
 <!DOCTYPE html>: Defines the document type as HTML5.
