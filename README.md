@@ -1,9 +1,9 @@
 # Calculator
 **INTRODUCTION**
 
+**HTML Files**
 
-**CSS Classes**
-
+**CSS Files**
 
 **abc.css**
 
@@ -64,5 +64,60 @@ Please ensure that you have the appropriate HTML structure and include this CSS 
 
 **def.css**
 
+This README explains the CSS styles defined in the provided code snippet. The styles are designed to control the appearance and layout of HTML elements to create an aesthetically pleasing and functional user interface.
 
-This README provides an overview of the CSS styles defined in the code snippet. You can adapt and expand this documentation to suit your project's needs
+**CSS Styles**
+
+Font Import
+
+The CSS code imports the "Roboto" font from Google Fonts, which is then applied to the entire HTML document. This font import statement ensures that the "Roboto" font is available for use in your project.
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body 
+
+{
+
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+Global Styles
+These styles apply to the entire HTML document and set the following properties:
+
+height: 100%; and width: 100%;: These properties ensure that the HTML and body elements occupy the full height and width of the viewport.
+font-family: 'Roboto', sans-serif;: This sets the default font for the entire document to "Roboto" and falls back to a generic sans-serif font if "Roboto" is not available.
+**Button Styles**
+The .button class styles buttons in your interface. It defines the following properties:
+
+padding: 20px;: Adds padding around the button content.
+width: 66px;: Sets a fixed width for the button.
+margin: 0 4px;: Provides margin spacing to separate buttons.
+border: 2px solid black;: Adds a black border around the button.
+border-radius: 10px;: Rounds the corners of the button.
+cursor: pointer;: Changes the cursor to a pointer on hover, indicating that the button is clickable.
+Row Styles
+The .row class styles rows in your interface. It defines the following properties:
+
+margin: 8px 0;: Adds margin spacing above and below the row.
+color: #000;: Sets the text color to black.
+font-size: 25px;: Sets the font size for text in the row.
+Input Styles
+Styles for input elements within rows are defined by the .row input selector. It defines the following properties:
+
+margin: 0;: Removes margin spacing around the input.
+padding: 25px 70px;: Adds padding to the input field.
+border: 2px solid black;: Adds a black border around the input field.
+border-radius: 10px;: Rounds the corners of the input field.
+Special Button Styles
+The .button-special-button class styles special buttons in your interface. It defines the following properties:
+
+width: 140px;: Sets a fixed width for special buttons.
+padding: 20px;: Adds padding around the button content.
+margin: 0 4px;: Provides margin spacing to separate special buttons.
+border: 2px solid black;: Adds a black border around special buttons.
+border-radius: 10px;: Rounds the corners of special buttons.
+cursor: pointer;: Changes the cursor to a pointer on hover, indicating that the special button is clickable.
+This README provides an overview of the CSS styles defined in the code snippet. You can adapt and expand this documentation to suit your project's needs.
