@@ -152,36 +152,123 @@ Global Styles
 These styles apply to the entire HTML document and set the following properties:
 
 height: 100%; and width: 100%;: These properties ensure that the HTML and body elements occupy the full height and width of the viewport.
+
 font-family: 'Roboto', sans-serif;: This sets the default font for the entire document to "Roboto" and falls back to a generic sans-serif font if "Roboto" is not available.
+
 **Button Styles**
+
 The .button class styles buttons in your interface. It defines the following properties:
 
 padding: 20px;: Adds padding around the button content.
+
 width: 66px;: Sets a fixed width for the button.
+
 margin: 0 4px;: Provides margin spacing to separate buttons.
+
 border: 2px solid black;: Adds a black border around the button.
+
 border-radius: 10px;: Rounds the corners of the button.
+
 cursor: pointer;: Changes the cursor to a pointer on hover, indicating that the button is clickable.
-Row Styles
+
+**Row Styles**
 The .row class styles rows in your interface. It defines the following properties:
 
 margin: 8px 0;: Adds margin spacing above and below the row.
+
 color: #000;: Sets the text color to black.
+
 font-size: 25px;: Sets the font size for text in the row.
-Input Styles
+
+**Input Styles**
+
 Styles for input elements within rows are defined by the .row input selector. It defines the following properties:
 
 margin: 0;: Removes margin spacing around the input.
+
 padding: 25px 70px;: Adds padding to the input field.
+
 border: 2px solid black;: Adds a black border around the input field.
+
 border-radius: 10px;: Rounds the corners of the input field.
-Special Button Styles
+
+**Special Button Styles**
+
 The .button-special-button class styles special buttons in your interface. It defines the following properties:
 
 width: 140px;: Sets a fixed width for special buttons.
+
 padding: 20px;: Adds padding around the button content.
+
 margin: 0 4px;: Provides margin spacing to separate special buttons.
+
 border: 2px solid black;: Adds a black border around special buttons.
+
 border-radius: 10px;: Rounds the corners of special buttons.
+
 cursor: pointer;: Changes the cursor to a pointer on hover, indicating that the special button is clickable.
+
 This README provides an overview of the CSS styles defined in the code snippet. You can adapt and expand this documentation to suit your project's needs.
+
+**JavaScript Code**
+
+This README explains the functionality and usage of the JavaScript code for a basic calculator. The code allows users to perform basic mathematical calculations through a user interface.
+
+The JavaScript code creates a simple calculator that listens for button clicks and updates an input field with the result. Here's a breakdown of the code:
+
+let string = '';
+
+let buttons = document.querySelectorAll('.button');
+
+Array.from(buttons).forEach((button) => {
+
+  button.addEventListener('click', (e) => {
+  
+    if (e.target.innerHTML === '=') {
+    
+      string = eval(string);
+      
+      document.querySelector('input').value = string;
+      
+    } else if (e.target.innerHTML === 'C') {
+    
+      string = '';
+      
+      document.querySelector('input').value = string;
+      
+    } else {
+    
+      string = string + e.target.innerHTML;
+      
+      document.querySelector('input').value = string;
+      
+    }
+    
+  });
+  
+});
+
+The code initializes a variable string to store the mathematical expression.
+
+It selects all elements with the class "button" and stores them in the buttons variable.
+
+It iterates through each button element and adds a click event listener.
+
+Inside the event listener for button clicks:
+
+If the clicked button's inner HTML is "=", it evaluates the current string using eval(), updates string with the result, and displays the result in the input field.
+
+If the clicked button's inner HTML is "C," it clears the string and sets the input field to an empty string.
+
+For other buttons, it appends the button's inner HTML to the string and updates the input field to reflect the current expression.
+
+**Usage**
+To use this simple calculator, follow these steps:
+
+Include the JavaScript code in your HTML file within a <script> tag.
+
+Make sure your HTML file contains buttons with the class "button" that represent digits (0-9), operators (+, -, *, /, %), a decimal point, "C" (clear), and "=" (equals).
+
+Add an <input> field with the appropriate selector (e.g., document.querySelector('input')) to display the calculation results.
+
+Users can interact with the calculator by clicking on the buttons to input numbers and perform calculations.
