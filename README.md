@@ -1,6 +1,8 @@
 # Calculator
 **INTRODUCTION**
 
+![image.docx](https://github.com/anshika3112/Calculator/files/12622879/image.docx)
+
 **HTML Files**
 
 This README explains the HTML and CSS code used to create a basic calculator web page. The web page provides a user interface for performing arithmetic calculations.
