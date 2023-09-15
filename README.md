@@ -1,7 +1,8 @@
 # Calculator
 **INTRODUCTION**
 
-![image.docx](https://github.com/anshika3112/Calculator/files/12622879/image.docx)
+![Screenshot 2023-09-15 235137](https://github.com/anshika3112/Calculator/assets/139126541/a3d9c896-f645-45cf-8ac1-e7c5f992f83b)
+
 
 **HTML Files**
 
